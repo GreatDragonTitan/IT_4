@@ -1,0 +1,35 @@
+﻿<Window x:Class="IT_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="IT_4" Height="350" Width="1025">
+    <DockPanel>
+        <ScrollViewer DockPanel.Dock="Top" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+            <Canvas Name="CanvasArea"  Height="410" Width="500" Background="AliceBlue" HorizontalAlignment="Left" VerticalAlignment="Top">
+
+                <Path Name="GraphiPath" StrokeThickness="1" Stroke="Black"/>
+                <Path Name="YPath" StrokeThickness="1" Stroke="Black"/>
+                <Path Name="XPath" StrokeThickness="1" Stroke="Black"/>
+
+                <Polyline Stroke="Black" Points="90 395 90 405"/>
+                <Polyline Stroke="Black" Points="130 395 130 405"/>
+                <Polyline Stroke="Black" Points="170 395 170 405"/>
+                <Polyline Stroke="Black" Points="210 395 210 405"/>
+                <Polyline Stroke="Black" Points="70 395 70 405"/>
+                <Polyline Stroke="Black" Points="110 395 110 405"/>
+                <Polyline Stroke="Black" Points="150 395 150 405"/>
+                <Polyline Stroke="Black" Points="190 395 190 405"/>
+
+                <Polyline Stroke="Black" Points="45 200 55 200"/>
+                <Polyline Stroke="Black" Points="45 390 55 390"/>
+                
+            </Canvas>
+        </ScrollViewer>
+        <StackPanel>
+            <TextBlock Text="F(4)=" x:Name="te" Margin="10 10"/>
+            <TextBlock Text="L5()=" x:Name="ter"  Margin="10 10" />
+        </StackPanel>
+    </DockPanel>
+</Window>
